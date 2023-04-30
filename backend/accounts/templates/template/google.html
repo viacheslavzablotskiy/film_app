@@ -1,0 +1,55 @@
+{% load socialaccount %}
+{% block content %}
+    ...
+    <button class="btn btn-outline-info">
+        <a href="{% provider_login_url 'google'%}?next=/">
+            <i class="fab fa-google"></i>
+            Login with Google
+        </a>
+    </button>
+    ...
+{% endblock content %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Title</title>-->
+<!--  <meta name="google-signin-client_id"-->
+<!--        content='166424081990-306e4qlv9iirghh0bqtipctsf8mbloqb.apps.googleusercontent.com'>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="my-signin"></div>-->
+
+
+<!--<script>-->
+
+<!--    function onSuccess(googleUser) {-->
+<!--        let profile = googleUser.getBasicProfile()-->
+<!--        console.log('Email: ' + profile.getEmail())-->
+<!--        let token = googleUser.getAuthResponse().id_token-->
+<!--        console.log('Token: ' + token)}-->
+
+
+
+
+<!--    function onFailure(error) {-->
+<!--        console.log(error)-->
+<!--    }-->
+
+<!--    function renderButton() {-->
+<!--        gapi.signin2.render('my-signin', {-->
+<!--            'scope': 'profile email',-->
+<!--            'width': 240,-->
+<!--            'height': 50,-->
+<!--            'longtitle': true,-->
+<!--            'theme': 'dark',-->
+<!--            'onsuccess': onSuccess,-->
+<!--            'onfailure': onFailure-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>-->
+<!--</body>-->
+<!--</html>-->
